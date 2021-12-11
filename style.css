@@ -9,5 +9,22 @@ body {
     width: 270px;
     height: 300px;
     border-radius: 15px;
-    object-fit: cover;git 
-  }
+    object-fit: cover;
+    animation-name: zoom-color;
+    animation-duration: 5s;
+    position: relative;
+    transition: transform 1s;
+}
+
+.img1:hover {
+    transform: scale(1.1);
+} 
+
+@keyframes zoom-color {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
